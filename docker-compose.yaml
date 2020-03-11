@@ -1,0 +1,16 @@
+# create .env file with MySQL root password and app@localhost MySQL password
+# ROOT_PW=pass_here
+# APP_PW=another_pass_here
+# 
+version: '3'
+services:
+  dvwa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ROOTPW: $ROOT_PW
+        APPPW: $APP_PW
+    image: ssdlc_poc_prod
+    ports:
+      - 80:80

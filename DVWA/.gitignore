@@ -1,0 +1,3 @@
+# Vim swap files
+.*swp
+DVWA/config/config.inc.php.bak
